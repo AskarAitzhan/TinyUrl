@@ -1,0 +1,6 @@
+FROM openjdk:11-jre-slim
+ARG JAR_FILE=target/tinyurl-0.0.1-SNAPSHOT.jar
+WORKDIR /app
+COPY ${JAR_FILE} app.jar
+ENTRYPOINT ["java", "-jar", "/app/app.jar"]
+EXPOSE 8080
