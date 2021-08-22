@@ -1,0 +1,8 @@
+steps:
+  # This step runs the unit tests on the app
+  - name: 'openjdk:11-jre-slim'
+    id: Test
+    entrypoint: /bin/sh
+    args:
+      - -c
+      - './mvnw test'
