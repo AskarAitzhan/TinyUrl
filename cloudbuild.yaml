@@ -1,6 +1,6 @@
 steps:
   # This step runs the unit tests on the app
-  - name: 'maven'
+  - name: 'java-docker'
     id: Test
     entrypoint: /bin/sh
     args:
