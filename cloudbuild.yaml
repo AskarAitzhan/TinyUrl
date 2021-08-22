@@ -1,6 +1,6 @@
 steps:
   # This step runs the unit tests on the app
-  - name: 'java-docker'
+  - name: 'openjdk:16-alpine3.13'
     id: Test
     entrypoint: /bin/sh
     args:
