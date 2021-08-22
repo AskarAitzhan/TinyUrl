@@ -1,6 +1,6 @@
 steps:
   # This step runs the unit tests on the app
-  - name: 'openjdk:11-jre-slim'
+  - name: 'maven'
     id: Test
     entrypoint: /bin/sh
     args:
